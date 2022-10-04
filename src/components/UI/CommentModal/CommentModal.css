@@ -1,0 +1,41 @@
+.comments-enter {
+  opacity: 0;
+  transform: translateX(10rem);
+  display: hidden;
+}
+.comments-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  display: block;
+  transition: all 500ms;
+}
+.comments-exit {
+  opacity: 1;
+  transform: translateX(0);
+  display: block;
+}
+.comments-exit-active {
+  opacity: 0;
+  transform: translateX(10rem);
+  display: hidden;
+  transition: all 500ms;
+}
+
+.comment-form-enter {
+  opacity: 0;
+  transform: translateY(-1rem);
+}
+.comment-form-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 300ms;
+}
+.comment-form-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.comment-form-exit-active {
+  opacity: 0;
+  transform: translateY(-1rem);
+  transition: all 300ms;
+}
